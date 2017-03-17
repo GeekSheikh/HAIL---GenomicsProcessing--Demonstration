@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 import seaborn
-import metadata
 from math import log, isnan
 from pyspark.sql import SparkSession
 from pyspark.sql import SQLContext
@@ -28,6 +27,9 @@ sys.path.append('/home/sense/hail-python.zip')
 from hail import *
 hc = HailContext(sc)
 
+# Here we'll import the metadata module from the file metadata.py
+import metadata
+
 #! wget https://storage.googleapis.com/hail-tutorial/Hail_Tutorial_Data-v2.tgz
 
 #! tar -xvzf Hail_Tutorial_Data-v2.tgz
@@ -48,5 +50,7 @@ vds = vds.annotate_samples_table('Hail_Tutorial-v2/1000Genomes.sample_annotation
 out_path = '1kg.vds'
 vds.write(out_path, parquet_genotypes=True)
 
+# Here the path needs to be fully qualified, not relative path
+# Then we call "build_parquet_metadata" to build the metadata table.
 vds_path = '/user/tomesd/1kg.vds'
 metadata.build_parquet_metadata(vds_path, sc, spark, create_tables=True, database='hail_vds_tomesd')

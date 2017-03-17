@@ -1,9 +1,5 @@
 import os
 from pyspark.sql import HiveContext
-#vds = vds_path
-#vds
-#database = 'hail_vds'
-#metadata_tablename = 'vds_metadata'
 
 def create_metadata_table(sc, database, metadata_tablename, vds, df):
   hiveContext = HiveContext(sc)
