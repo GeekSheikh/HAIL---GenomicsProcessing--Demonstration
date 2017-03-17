@@ -37,5 +37,3 @@ sys.path.append('/home/sense/hail-python.zip')
 from hail import *
 hc = HailContext(sc)
 ```
-
-http://github.mtv.cloudera.com/srfnmnk/CHOA--HAIL-GeneProcessing/blob/master/metadata.py
