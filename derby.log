@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Mar 13 17:53:10 EDT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-015a-c9a9-28b3-000013a75fd0 
+on database directory /Users/daniel.tomes/Documents/Dev/gitProjects/CHOA--HAIL-GeneProcessing/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@1aa8442a 
+Loaded from file:/Users/daniel.tomes/Software/spark-2.0.0-bin-hadoop2.6/jars/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=/Users/daniel.tomes/Documents/Dev/gitProjects/CHOA--HAIL-GeneProcessing
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.12.3
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

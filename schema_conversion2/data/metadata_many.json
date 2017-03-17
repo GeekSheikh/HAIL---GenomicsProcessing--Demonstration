@@ -1,0 +1,3421 @@
+{
+  "version" : 4,
+  "split" : true,
+  "isDosage" : false,
+  "isGenericGenotype" : false,
+  "parquetGenotypes" : false,
+  "sample_annotation_schema" : "Struct{pheno:Struct{Sample:String,Population:String,SuperPopulation:String,isFemale:Boolean,PurpleHair:Boolean,CaffeineConsumption:Double}}",
+  "variant_annotation_schema" : "Struct{rsid:String,qual:Double,filters:Set[String]@LowQual=\"\",pass:Boolean,info:Struct{AC:Array[Int]@Description=\"Allele count in genotypes, for each ALT allele, in the same order as listed\"@Number=\".\"@Type=\"Integer\",AF:Array[Double]@Description=\"Allele Frequency, for each ALT allele, in the same order as listed\"@Number=\".\"@Type=\"Float\",AN:Int@Description=\"Total number of alleles in called genotypes\"@Number=\"1\"@Type=\"Integer\",BaseQRankSum:Double@Description=\"Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities\"@Number=\"1\"@Type=\"Float\",ClippingRankSum:Double@Description=\"Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases\"@Number=\"1\"@Type=\"Float\",DP:Int@Description=\"Approximate read depth; some reads may have been filtered\"@Number=\"1\"@Type=\"Integer\",DS:Boolean@Description=\"Were any of the samples downsampled?\"@Number=\"0\"@Type=\"Flag\",FS:Double@Description=\"Phred-scaled p-value using Fisher's exact test to detect strand bias\"@Number=\"1\"@Type=\"Float\",HaplotypeScore:Double@Description=\"Consistency of the site with at most two segregating haplotypes\"@Number=\"1\"@Type=\"Float\",InbreedingCoeff:Double@Description=\"Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation\"@Number=\"1\"@Type=\"Float\",MLEAC:Array[Int]@Description=\"Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed\"@Number=\".\"@Type=\"Integer\",MLEAF:Array[Double]@Description=\"Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed\"@Number=\".\"@Type=\"Float\",MQ:Double@Description=\"RMS Mapping Quality\"@Number=\"1\"@Type=\"Float\",MQ0:Int@Description=\"Total Mapping Quality Zero Reads\"@Number=\"1\"@Type=\"Integer\",MQRankSum:Double@Description=\"Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities\"@Number=\"1\"@Type=\"Float\",QD:Double@Description=\"Variant Confidence/Quality by Depth\"@Number=\"1\"@Type=\"Float\",ReadPosRankSum:Double@Description=\"Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias\"@Number=\"1\"@Type=\"Float\",set:String@Description=\"Source VCF for the merged record in CombineVariants\"@Number=\"1\"@Type=\"String\"},aIndex:Int,wasSplit:Boolean}",
+  "global_annotation_schema" : "Empty",
+  "genotype_schema" : "Genotype",
+  "sample_annotations" : [ {
+    "id" : "HG00096",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00096",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 77.0
+      }
+    }
+  }, {
+    "id" : "HG00099",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00099",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG00105",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00105",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 77.0
+      }
+    }
+  }, {
+    "id" : "HG00118",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00118",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG00129",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00129",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG00148",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00148",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG00177",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00177",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG00182",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00182",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "HG00242",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00242",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG00254",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00254",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG00265",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00265",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG00271",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00271",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "HG00274",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00274",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG00332",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00332",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG00335",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00335",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG00369",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00369",
+        "Population" : "FIN",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00421",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00421",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG00436",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00436",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG00452",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00452",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG00472",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00472",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 75.0
+      }
+    }
+  }, {
+    "id" : "HG00530",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00530",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG00534",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00534",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG00583",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00583",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00590",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00590",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00598",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00598",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG00607",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00607",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "HG00619",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00619",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG00623",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00623",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00657",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00657",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG00663",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00663",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG00704",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00704",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG00705",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00705",
+        "Population" : "CHS",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00733",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00733",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG00864",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00864",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG00881",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG00881",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 78.0
+      }
+    }
+  }, {
+    "id" : "HG01052",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01052",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG01070",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01070",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG01075",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01075",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01164",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01164",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 80.0
+      }
+    }
+  }, {
+    "id" : "HG01174",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01174",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG01241",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01241",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG01248",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01248",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG01256",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01256",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG01275",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01275",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01284",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01284",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01334",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01334",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 76.0
+      }
+    }
+  }, {
+    "id" : "HG01348",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01348",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG01396",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01396",
+        "Population" : "PUR",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG01443",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01443",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG01491",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01491",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG01498",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01498",
+        "Population" : "CLM",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG01537",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01537",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG01572",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01572",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG01606",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01606",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG01623",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01623",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG01630",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01630",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01783",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01783",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 58.0
+      }
+    }
+  }, {
+    "id" : "HG01784",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01784",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG01790",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01790",
+        "Population" : "GBR",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG01799",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01799",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG01801",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01801",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG01806",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01806",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG01812",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01812",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG01813",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01813",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG01817",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01817",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01848",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01848",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG01849",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01849",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG01857",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01857",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG01863",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01863",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG01874",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01874",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG01915",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01915",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG01924",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01924",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG01965",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01965",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG01970",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01970",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "HG01991",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG01991",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG02010",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02010",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02020",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02020",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG02054",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02054",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02086",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02086",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02087",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02087",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02116",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02116",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG02122",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02122",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 75.0
+      }
+    }
+  }, {
+    "id" : "HG02130",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02130",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 57.0
+      }
+    }
+  }, {
+    "id" : "HG02131",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02131",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02152",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02152",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG02154",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02154",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02165",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02165",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02224",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02224",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 59.0
+      }
+    }
+  }, {
+    "id" : "HG02232",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02232",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG02236",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02236",
+        "Population" : "IBS",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02250",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02250",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG02259",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02259",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02298",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02298",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02318",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02318",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG02345",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02345",
+        "Population" : "PEL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG02351",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02351",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 59.0
+      }
+    }
+  }, {
+    "id" : "HG02363",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02363",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 76.0
+      }
+    }
+  }, {
+    "id" : "HG02373",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02373",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG02383",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02383",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG02384",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02384",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG02386",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02386",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "HG02388",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02388",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG02389",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02389",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG02397",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02397",
+        "Population" : "CDX",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG02419",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02419",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG02462",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02462",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG02464",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02464",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG02497",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02497",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG02511",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02511",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02521",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02521",
+        "Population" : "KHV",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02561",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02561",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG02574",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02574",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02580",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02580",
+        "Population" : "ACB",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 57.0
+      }
+    }
+  }, {
+    "id" : "HG02595",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02595",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02603",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02603",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG02629",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02629",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG02651",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02651",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG02682",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02682",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG02688",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02688",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02690",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02690",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02699",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02699",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG02760",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02760",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG02768",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02768",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02771",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02771",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG02792",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02792",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG02798",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02798",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "HG02811",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02811",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG02814",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02814",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG02840",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02840",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG02870",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02870",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02881",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02881",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02970",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02970",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG02973",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG02973",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG03009",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03009",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG03046",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03046",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG03074",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03074",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG03091",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03091",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG03105",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03105",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG03127",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03127",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG03193",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03193",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG03224",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03224",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 75.0
+      }
+    }
+  }, {
+    "id" : "HG03237",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03237",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "HG03241",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03241",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG03247",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03247",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG03259",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03259",
+        "Population" : "GWD",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG03267",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03267",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03354",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03354",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG03366",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03366",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG03367",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03367",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG03380",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03380",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 58.0
+      }
+    }
+  }, {
+    "id" : "HG03419",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03419",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 59.0
+      }
+    }
+  }, {
+    "id" : "HG03449",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03449",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG03451",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03451",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "HG03458",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03458",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03490",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03490",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG03491",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03491",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG03511",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03511",
+        "Population" : "ESN",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03556",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03556",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG03563",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03563",
+        "Population" : "MSL",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG03598",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03598",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG03603",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03603",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 75.0
+      }
+    }
+  }, {
+    "id" : "HG03607",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03607",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG03636",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03636",
+        "Population" : "PJL",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG03684",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03684",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "HG03686",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03686",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03690",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03690",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "HG03731",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03731",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG03740",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03740",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03755",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03755",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG03800",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03800",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG03815",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03815",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "HG03832",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03832",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG03850",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03850",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "HG03873",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03873",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG03897",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03897",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG03905",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03905",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "HG03937",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03937",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "HG03948",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03948",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG03973",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG03973",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "HG04054",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04054",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "HG04059",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04059",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG04063",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04063",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "HG04096",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04096",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG04099",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04099",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG04140",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04140",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "HG04171",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04171",
+        "Population" : "BEB",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG04209",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04209",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "HG04210",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04210",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "HG04229",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04229",
+        "Population" : "STU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "HG04239",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "HG04239",
+        "Population" : "ITU",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "NA07347",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA07347",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 77.0
+      }
+    }
+  }, {
+    "id" : "NA11918",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA11918",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "NA11919",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA11919",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA12045",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12045",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA12273",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12273",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA12342",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12342",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 77.0
+      }
+    }
+  }, {
+    "id" : "NA12414",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12414",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA12546",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12546",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 57.0
+      }
+    }
+  }, {
+    "id" : "NA12760",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12760",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA12878",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA12878",
+        "Population" : "CEU",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA18516",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18516",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA18525",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18525",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA18534",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18534",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA18541",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18541",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA18557",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18557",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 76.0
+      }
+    }
+  }, {
+    "id" : "NA18565",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18565",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA18616",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18616",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA18619",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18619",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA18623",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18623",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA18630",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18630",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA18631",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18631",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA18740",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18740",
+        "Population" : "CHB",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA18853",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18853",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA18865",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18865",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "NA18873",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18873",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "NA18874",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18874",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA18916",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18916",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA18960",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18960",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA18966",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18966",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA18975",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18975",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA18976",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18976",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "NA18978",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18978",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA18990",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA18990",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "NA19060",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19060",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA19063",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19063",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "NA19076",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19076",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA19086",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19086",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA19087",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19087",
+        "Population" : "JPT",
+        "SuperPopulation" : "EAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA19096",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19096",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 75.0
+      }
+    }
+  }, {
+    "id" : "NA19113",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19113",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "NA19118",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19118",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA19185",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19185",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA19209",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19209",
+        "Population" : "YRI",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA19311",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19311",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 76.0
+      }
+    }
+  }, {
+    "id" : "NA19314",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19314",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "NA19317",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19317",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA19321",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19321",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA19379",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19379",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "NA19384",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19384",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "NA19390",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19390",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA19397",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19397",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "NA19399",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19399",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA19404",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19404",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 67.0
+      }
+    }
+  }, {
+    "id" : "NA19446",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19446",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA19448",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19448",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "NA19455",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19455",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA19456",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19456",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA19466",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19466",
+        "Population" : "LWK",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA19655",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19655",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "NA19657",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19657",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA19670",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19670",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "NA19678",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19678",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA19679",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19679",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "NA19701",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19701",
+        "Population" : "ASW",
+        "SuperPopulation" : "AFR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA19720",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19720",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "NA19756",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19756",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "NA19761",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19761",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA19764",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19764",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA19786",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA19786",
+        "Population" : "MXL",
+        "SuperPopulation" : "AMR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 63.0
+      }
+    }
+  }, {
+    "id" : "NA20318",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20318",
+        "Population" : "ASW",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA20351",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20351",
+        "Population" : "ASW",
+        "SuperPopulation" : "AFR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "NA20517",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20517",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "NA20518",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20518",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 73.0
+      }
+    }
+  }, {
+    "id" : "NA20529",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20529",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 65.0
+      }
+    }
+  }, {
+    "id" : "NA20587",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20587",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA20757",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20757",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 60.0
+      }
+    }
+  }, {
+    "id" : "NA20798",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20798",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 74.0
+      }
+    }
+  }, {
+    "id" : "NA20799",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20799",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 61.0
+      }
+    }
+  }, {
+    "id" : "NA20800",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20800",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA20810",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20810",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "NA20826",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20826",
+        "Population" : "TSI",
+        "SuperPopulation" : "EUR",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 66.0
+      }
+    }
+  }, {
+    "id" : "NA20858",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20858",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "NA20864",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20864",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 72.0
+      }
+    }
+  }, {
+    "id" : "NA20869",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20869",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 58.0
+      }
+    }
+  }, {
+    "id" : "NA20877",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20877",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 64.0
+      }
+    }
+  }, {
+    "id" : "NA20888",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20888",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "NA20910",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA20910",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 68.0
+      }
+    }
+  }, {
+    "id" : "NA21101",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21101",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 62.0
+      }
+    }
+  }, {
+    "id" : "NA21113",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21113",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA21114",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21114",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 77.0
+      }
+    }
+  }, {
+    "id" : "NA21116",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21116",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 71.0
+      }
+    }
+  }, {
+    "id" : "NA21118",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21118",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : false,
+        "CaffeineConsumption" : 70.0
+      }
+    }
+  }, {
+    "id" : "NA21133",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21133",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : false,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 69.0
+      }
+    }
+  }, {
+    "id" : "NA21143",
+    "annotation" : {
+      "pheno" : {
+        "Sample" : "NA21143",
+        "Population" : "GIH",
+        "SuperPopulation" : "SAS",
+        "isFemale" : true,
+        "PurpleHair" : true,
+        "CaffeineConsumption" : 59.0
+      }
+    }
+  } ],
+  "global_annotation" : null
+}
