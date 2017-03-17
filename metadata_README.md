@@ -1,4 +1,4 @@
-#Readme file for the [metadata](http://github.mtv.cloudera.com/srfnmnk/CHOA--HAIL-GeneProcessing/metadata.py) module
+#Readme file for the [metadata](http://github.mtv.cloudera.com/srfnmnk/CHOA--HAIL-GeneProcessing/blob/master/metadata.py) module
 
 ##Convert the VCF to VDS
 First thing we need to do is convert the VCF to a VDS using the HAIL tool. While we do this the important parts to take a close look at are:
